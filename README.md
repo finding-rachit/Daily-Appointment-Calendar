@@ -1,15 +1,15 @@
 # Daily-Appointment-Calendar
-Breakdown of the steps used to build the program.
+Outline of the program.
 
-1.	Create a class Appointment. Class Appointment should contain instance variables date (of type Calendar) and description (of type String). Don’t forget to make an object of type GregorianCalendar in the constructor method and set date to point to it. Here are some suggested methods for class Appointment:
-a.	A constructor method that takes a year, month, day, hour, minute and description parameters and sets the date and description instance variables. See the of CalendarTester program.
-b.	Get and Set methods for the instance variables (i.e. getDescription() etc.)
+1.	Create a class Appointment. The class has instance variables date (of type Calendar) and description (of type String). Make an object of type GregorianCalendar in the constructor method and set date to point to it. Methods for class Appointment:
+a.	A constructor method that takes a year, month, day, hour, minute and description parameters and sets the date and description instance variables. 
+b.	Get and Set methods for the instance variables 
 c.	A print method that returns a string containing the appointment time (hour and minute) and the appointment description.
 d.	A method occursOn that takes a year, month, day, hour, minute as parameters and checks to determine if this appointment is on the same day and time. Returns true or false.
-e.	Class Appointment should implement the Comparable interface. You should be able to compare two appointment object based on their calendar date.
+e.	Class Appointment should implement the Comparable interface. Should be able to compare two appointment object based on their calendar date.
 
-2.	Create a custom JFrame for your program called AppointmentFrame. Your frame should have 3 main panels (I suggest you use a Border Layout): 
-a.	Create a JLabel component and put it in the NORTH part of the frame.  This is where you will display the current date using the Calendar class and the SimpleDateFormat class. I suggest you create a calendar instance variable in class AppointmentFrame as well as a SimpleDateFormat instance variable. Create objects of Calendar and SimpleDateFormat in the constructor method of AppointmentFrame. See the CalendarTester example.  
+2.	Create a custom JFrame for the program called AppointmentFrame. The frame should have 3 main panels (use border layout)
+a.	Create a JLabel component and put it in the NORTH part of the frame.  This is where you will display the current date using the Calendar class and the SimpleDateFormat class. Create a calendar instance variable in class AppointmentFrame as well as a SimpleDateFormat instance variable. Create objects of Calendar and SimpleDateFormat in the constructor method of AppointmentFrame. See the CalendarTester example.  
 b.	Create a reference instance variable called appointments that refers to an ArrayList of Appointment objects (see class Appointment below). Don’t forget to create the ArrayList object in the constructor method. This array list will hold all your appointment objects. 
 c.	Create a JTextArea object and add it to the CENTER part of the frame. Make it scrollable. This is where the appointments for the current day will be displayed.
 d.	Make a control panel (JPanel) object and add it to the SOUTH part of the frame. Details of the control panel are described below:
